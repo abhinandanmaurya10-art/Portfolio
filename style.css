@@ -182,3 +182,83 @@ margin-bottom:15px;
 max-width:700px;
 line-height:1.6;
 }
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  /* Sidebar becomes top bar */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .sidebar-photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar-menu li {
+    margin: 10px;
+  }
+
+  /* Main content full width */
+  .main-content {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+
+  /* Name size smaller */
+  .name {
+    font-size: 40px;
+  }
+
+  /* Contact text wrap */
+  .contact {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Bio text adjust */
+  .bio {
+    font-size: 16px;
+  }
+
+  /* Section spacing */
+  section {
+    margin-top: 60px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* Skills wrap properly */
+  .skills {
+    justify-content: center;
+  }
+
+  /* Social icons smaller */
+  .social a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  /* Resume button full width */
+  .resume-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
