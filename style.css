@@ -1,14 +1,27 @@
-
-/* GENERAL */
+```css
+/* =========================
+   GENERAL
+========================= */
 
 body{
 margin:0;
 font-family:'DM Sans',sans-serif;
 color:#444;
 background:#f8f8f8;
+overflow-x:hidden;
 }
 
-/* SIDEBAR */
+*{
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
 
 .sidebar{
 position:fixed;
@@ -21,9 +34,13 @@ display:flex;
 flex-direction:column;
 align-items:center;
 padding-top:60px;
+z-index:1000;
+transition:0.4s;
 }
 
-/* PHOTO */
+/* =========================
+   PHOTO
+========================= */
 
 .sidebar-photo{
 width:140px;
@@ -34,12 +51,15 @@ object-fit:cover;
 margin-bottom:40px;
 }
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 .sidebar-menu{
 list-style:none;
 padding:0;
 text-align:center;
+margin:0;
 }
 
 .sidebar-menu li{
@@ -53,13 +73,16 @@ font-weight:600;
 letter-spacing:1px;
 font-size:14px;
 opacity:0.8;
+transition:0.3s;
 }
 
 .sidebar-menu a:hover{
 opacity:1;
 }
 
-/* MAIN CONTENT */
+/* =========================
+   MAIN CONTENT
+========================= */
 
 .main-content{
 margin-left:260px;
@@ -67,24 +90,31 @@ padding:80px;
 max-width:900px;
 }
 
-/* NAME */
+/* =========================
+   NAME
+========================= */
 
 .name{
 font-size:70px;
 font-weight:900;
 font-family:'Barlow Condensed',sans-serif;
 letter-spacing:2px;
+line-height:1.1;
+margin-bottom:10px;
 }
 
 .name span{
 color:#c65b2e;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
 margin:15px 0 40px;
 color:#777;
+line-height:1.8;
 }
 
 .contact a{
@@ -92,15 +122,19 @@ color:#c65b2e;
 text-decoration:none;
 }
 
-/* BIO */
+/* =========================
+   BIO
+========================= */
 
 .bio{
 font-size:18px;
-line-height:1.7;
+line-height:1.8;
 margin-bottom:40px;
 }
 
-/* SOCIAL */
+/* =========================
+   SOCIAL
+========================= */
 
 .social{
 display:flex;
@@ -119,9 +153,16 @@ justify-content:center;
 color:white;
 font-size:22px;
 text-decoration:none;
+transition:0.3s;
 }
 
-/* RESUME BUTTON */
+.social a:hover{
+transform:translateY(-4px);
+}
+
+/* =========================
+   RESUME BUTTON
+========================= */
 
 .resume-btn{
 background:#c65b2e;
@@ -131,9 +172,16 @@ border-radius:5px;
 text-decoration:none;
 font-weight:500;
 display:inline-block;
+transition:0.3s;
 }
 
-/* SECTIONS */
+.resume-btn:hover{
+opacity:0.9;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
 margin-top:120px;
@@ -145,120 +193,248 @@ font-family:'Barlow Condensed',sans-serif;
 margin-bottom:30px;
 }
 
-/* PROJECTS */
+/* =========================
+   PROJECTS
+========================= */
 
 .project{
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 .project h3{
-margin-bottom:8px;
+margin-bottom:10px;
+font-size:24px;
 }
 
-/* SKILLS */
+.project p{
+line-height:1.7;
+}
 
-.skills{
+/* =========================
+   EDUCATION
+========================= */
+
+.education-item{
+margin-bottom:25px;
+}
+
+.degree{
+margin-bottom:5px;
+}
+
+.edu-details{
+color:#666;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container{
 display:flex;
 flex-wrap:wrap;
-gap:10px;
+gap:12px;
 }
 
 .skill{
 background:#e6f6f9;
-padding:8px 14px;
+padding:10px 16px;
 border-radius:20px;
 font-size:14px;
 }
 
-/* CERTIFICATIONS */
+/* =========================
+   CERTIFICATIONS
+========================= */
 
 .cert{
 margin-bottom:15px;
 }
 
-/* INTEREST */
+/* =========================
+   INTEREST
+========================= */
 
 .interest{
 max-width:700px;
-line-height:1.6;
+line-height:1.8;
 }
 
-/* MOBILE RESPONSIVE */
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
 
-@media (max-width: 768px) {
-
-  /* Sidebar becomes top bar */
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 20px 0;
-  }
-
-  .sidebar-photo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-  }
-
-  .sidebar-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sidebar-menu li {
-    margin: 10px;
-  }
-
-  /* Main content full width */
-  .main-content {
-    margin-left: 0;
-    padding: 30px 20px;
-  }
-
-  /* Name size smaller */
-  .name {
-    font-size: 40px;
-  }
-
-  /* Contact text wrap */
-  .contact {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  /* Bio text adjust */
-  .bio {
-    font-size: 16px;
-  }
-
-  /* Section spacing */
-  section {
-    margin-top: 60px;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
-
-  /* Skills wrap properly */
-  .skills {
-    justify-content: center;
-  }
-
-  /* Social icons smaller */
-  .social a {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  /* Resume button full width */
-  .resume-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
+.mobile-menu-toggle{
+display:none;
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+/* MOBILE BUTTON */
+
+.mobile-menu-toggle{
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:5px;
+position:fixed;
+top:20px;
+right:20px;
+z-index:1100;
+background:#20b4c8;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.mobile-menu-toggle span{
+width:25px;
+height:3px;
+background:white;
+border-radius:5px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+left:-100%;
+width:240px;
+height:100vh;
+padding-top:40px;
+overflow-y:auto;
+}
+
+.sidebar.active{
+left:0;
+}
+
+/* PHOTO */
+
+.sidebar-photo{
+width:100px;
+height:100px;
+margin-bottom:25px;
+}
+
+/* MENU */
+
+.sidebar-menu{
+display:flex;
+flex-direction:column;
+align-items:center;
+width:100%;
+}
+
+.sidebar-menu li{
+margin:14px 0;
+}
+
+.sidebar-menu a{
+font-size:13px;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+margin-left:0;
+padding:90px 20px 40px;
+max-width:100%;
+}
+
+/* NAME */
+
+.name{
+font-size:42px;
+line-height:1.1;
+}
+
+/* CONTACT */
+
+.contact{
+font-size:14px;
+line-height:1.7;
+word-break:break-word;
+}
+
+/* BIO */
+
+.bio{
+font-size:15px;
+line-height:1.8;
+text-align:justify;
+}
+
+/* SECTION */
+
+section{
+margin-top:70px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+/* SOCIAL */
+
+.social{
+justify-content:center;
+gap:15px;
+}
+
+.social a{
+width:42px;
+height:42px;
+font-size:18px;
+}
+
+/* BUTTON */
+
+.resume-btn{
+display:block;
+width:100%;
+text-align:center;
+padding:14px;
+}
+
+/* SKILLS */
+
+.skills-container{
+justify-content:center;
+}
+
+.skill{
+font-size:13px;
+padding:8px 12px;
+}
+
+/* PROJECTS */
+
+.project h3{
+font-size:20px;
+}
+
+.project p{
+font-size:14px;
+line-height:1.7;
+}
+
+/* EDUCATION */
+
+.edu-details{
+font-size:14px;
+}
+
+/* INTEREST */
+
+.interest{
+font-size:15px;
+line-height:1.8;
+}
+
+}
+```
