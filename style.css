@@ -1,446 +1,326 @@
 /* =========================
    GENERAL
 ========================= */
-
-body{
-margin:0;
-font-family:'DM Sans',sans-serif;
-color:#444;
-background:#f8f8f8;
-overflow-x:hidden;
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: #444;
+    background: #f8f8f8;
 }
 
-*{
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
 
 /* =========================
    SIDEBAR
 ========================= */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 260px;
+    background: #20b4c8;
 
-.sidebar{
-position:fixed;
-left:0;
-top:0;
-height:100%;
-width:260px;
-background:#20b4c8;
-display:flex;
-flex-direction:column;
-align-items:center;
-padding-top:60px;
-z-index:1000;
-transition:0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 60px;
 }
+
 
 /* =========================
    PHOTO
 ========================= */
+.sidebar-photo {
+    width: 140px;
+    height: 140px;
 
-.sidebar-photo{
-width:140px;
-height:140px;
-border-radius:50%;
-border:8px solid #6e9aa7;
-object-fit:cover;
-margin-bottom:40px;
+    border-radius: 50%;
+    border: 8px solid #6e9aa7;
+
+    object-fit: cover;
+    margin-bottom: 40px;
 }
+
 
 /* =========================
    MENU
 ========================= */
-
-.sidebar-menu{
-list-style:none;
-padding:0;
-text-align:center;
-margin:0;
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-.sidebar-menu li{
-margin:18px 0;
+.sidebar-menu li {
+    margin: 18px 0;
 }
 
-.sidebar-menu a{
-text-decoration:none;
-color:white;
-font-weight:600;
-letter-spacing:1px;
-font-size:14px;
-opacity:0.8;
-transition:0.3s;
+.sidebar-menu a {
+    text-decoration: none;
+    color: white;
+
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
-.sidebar-menu a:hover{
-opacity:1;
+.sidebar-menu a:hover {
+    opacity: 1;
 }
+
 
 /* =========================
    MAIN CONTENT
 ========================= */
-
-.main-content{
-margin-left:260px;
-padding:80px;
-max-width:1000px;
+.main-content {
+    margin-left: 260px;
+    padding: 80px;
+    max-width: 900px;
 }
+
 
 /* =========================
    NAME
 ========================= */
-
-.name{
-font-size:70px;
-font-weight:900;
-font-family:'Barlow Condensed',sans-serif;
-letter-spacing:2px;
-line-height:1;
-margin-bottom:10px;
+.name {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
 }
 
-.name span{
-color:#c65b2e;
+.name span {
+    color: #c65b2e;
 }
+
 
 /* =========================
    CONTACT
 ========================= */
-
-.contact{
-margin:15px 0 40px;
-color:#777;
-line-height:1.8;
+.contact {
+    margin: 15px 0 40px;
+    color: #777;
 }
 
-.contact a{
-color:#c65b2e;
-text-decoration:none;
-word-break:break-word;
+.contact a {
+    color: #c65b2e;
+    text-decoration: none;
 }
+
 
 /* =========================
    BIO
 ========================= */
-
-.bio{
-font-size:18px;
-line-height:1.8;
-margin-bottom:40px;
-max-width:800px;
+.bio {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
 }
+
 
 /* =========================
    SOCIAL
 ========================= */
-
-.social{
-display:flex;
-gap:20px;
-margin-bottom:30px;
+.social {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-.social a{
-width:50px;
-height:50px;
-background:#4aaed0;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:22px;
-text-decoration:none;
-transition:0.3s;
+.social a {
+    width: 50px;
+    height: 50px;
+
+    background: #4aaed0;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+
+    transition: 0.3s;
 }
 
-.social a:hover{
-transform:scale(1.1);
+.social a:hover {
+    transform: scale(1.1);
 }
+
 
 /* =========================
    RESUME BUTTON
 ========================= */
+.resume-btn {
+    background: #c65b2e;
+    color: white;
 
-.resume-btn{
-background:#c65b2e;
-color:white;
-padding:14px 30px;
-border-radius:5px;
-text-decoration:none;
-font-weight:500;
-display:inline-block;
-transition:0.3s;
+    padding: 12px 30px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: 500;
+
+    display: inline-block;
 }
 
-.resume-btn:hover{
-opacity:0.9;
-}
 
 /* =========================
    SECTIONS
 ========================= */
-
-section{
-margin-top:120px;
+section {
+    margin-top: 120px;
 }
 
-.section-title{
-font-size:40px;
-font-family:'Barlow Condensed',sans-serif;
-margin-bottom:30px;
+.section-title {
+    font-size: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 30px;
 }
 
-/* =========================
-   EDUCATION
-========================= */
-
-.education-item{
-margin-bottom:25px;
-}
-
-.degree{
-margin-bottom:6px;
-font-size:18px;
-}
-
-.edu-details{
-color:#666;
-}
 
 /* =========================
    PROJECTS
 ========================= */
-
-.project{
-margin-bottom:30px;
+.project {
+    margin-bottom: 25px;
 }
 
-.project h3{
-margin-bottom:8px;
-font-size:24px;
+.project h3 {
+    margin-bottom: 8px;
 }
 
-.project p{
-line-height:1.7;
-}
 
 /* =========================
    SKILLS
 ========================= */
-
-.skills-container{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:20px;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.skill{
-background:#e6f6f9;
-padding:10px 16px;
-border-radius:20px;
-font-size:14px;
+.skill {
+    background: #e6f6f9;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
 }
+
 
 /* =========================
    CERTIFICATIONS
 ========================= */
-
-.cert{
-margin-bottom:15px;
-line-height:1.7;
+.cert {
+    margin-bottom: 15px;
 }
+
 
 /* =========================
    INTEREST
 ========================= */
-
-.interest{
-max-width:700px;
-line-height:1.8;
+.interest {
+    max-width: 700px;
+    line-height: 1.6;
 }
 
-/* =========================
-   MOBILE MENU BUTTON
-========================= */
-
-.mobile-menu-toggle{
-display:none;
-}
 
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
+@media (max-width: 768px) {
 
-@media (max-width:768px){
+    /* Sidebar becomes top section */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
 
-/* MOBILE BUTTON */
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
 
-.mobile-menu-toggle{
-display:flex;
-flex-direction:column;
-justify-content:center;
-gap:5px;
-position:fixed;
-top:20px;
-right:20px;
-z-index:1100;
-background:#20b4c8;
-border:none;
-padding:12px;
-border-radius:8px;
-cursor:pointer;
-}
+    /* Profile photo smaller */
+    .sidebar-photo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
 
-.mobile-menu-toggle span{
-width:25px;
-height:3px;
-background:white;
-border-radius:5px;
-}
+    /* Menu responsive */
+    .sidebar-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 
-/* SIDEBAR */
+    .sidebar-menu li {
+        margin: 0;
+    }
 
-.sidebar{
-left:-100%;
-width:240px;
-height:100vh;
-padding-top:40px;
-overflow-y:auto;
-}
+    /* Main content full width */
+    .main-content {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
 
-.sidebar.active{
-left:0;
-}
+    /* Name responsive */
+    .name {
+        font-size: 40px;
+        line-height: 1.1;
+    }
 
-/* PHOTO */
+    /* Contact wrap properly */
+    .contact {
+        font-size: 14px;
+        line-height: 1.6;
+        word-break: break-word;
+    }
 
-.sidebar-photo{
-width:100px;
-height:100px;
-margin-bottom:25px;
-}
+    /* Bio responsive */
+    .bio {
+        font-size: 16px;
+    }
 
-/* MENU */
+    /* Section spacing */
+    section {
+        margin-top: 60px;
+    }
 
-.sidebar-menu{
-display:flex;
-flex-direction:column;
-align-items:center;
-width:100%;
-}
+    .section-title {
+        font-size: 28px;
+    }
 
-.sidebar-menu li{
-margin:14px 0;
-}
+    /* Skills centered */
+    .skills {
+        justify-content: center;
+    }
 
-.sidebar-menu a{
-font-size:13px;
-}
+    /* Social icons smaller */
+    .social {
+        justify-content: center;
+    }
 
-/* MAIN CONTENT */
+    .social a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
 
-.main-content{
-margin-left:0;
-padding:90px 20px 40px;
-max-width:100%;
-}
-
-/* NAME */
-
-.name{
-font-size:42px;
-line-height:1.1;
-}
-
-/* CONTACT */
-
-.contact{
-font-size:14px;
-line-height:1.7;
-}
-
-/* BIO */
-
-.bio{
-font-size:15px;
-line-height:1.8;
-text-align:justify;
-}
-
-/* SECTIONS */
-
-section{
-margin-top:70px;
-}
-
-.section-title{
-font-size:32px;
-}
-
-/* SOCIAL */
-
-.social{
-justify-content:center;
-gap:15px;
-}
-
-.social a{
-width:42px;
-height:42px;
-font-size:18px;
-}
-
-/* BUTTON */
-
-.resume-btn{
-display:block;
-width:100%;
-text-align:center;
-padding:14px;
-}
-
-/* SKILLS */
-
-.skills-container{
-justify-content:center;
-}
-
-.skill{
-font-size:13px;
-padding:8px 12px;
-}
-
-/* PROJECTS */
-
-.project h3{
-font-size:20px;
-}
-
-.project p{
-font-size:14px;
-line-height:1.7;
-}
-
-/* EDUCATION */
-
-.degree{
-font-size:16px;
-}
-
-.edu-details{
-font-size:14px;
-}
-
-/* INTEREST */
-
-.interest{
-font-size:15px;
-line-height:1.8;
-}
-
+    /* Resume button fixed */
+    .resume-btn {
+        display: inline-block;
+        width: auto;
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }
