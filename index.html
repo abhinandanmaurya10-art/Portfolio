@@ -1,152 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhinandan Verma Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinandan Verma Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- MOBILE MENU TOGGLE -->
-<button class="mobile-menu-toggle" id="menuToggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+  <!-- MOBILE MENU TOGGLE -->
+  <button class="mobile-menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+    aria-controls="sidebar" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-<!-- SIDEBAR -->
-<div class="sidebar" id="sidebar">
-  <img src="WhatsApp Image 2026-03-16 at 10.32.52 PM.jpeg" class="sidebar-photo" alt="Abhinandan Verma">
-  
-  <ul class="sidebar-menu">
-    <li><a href="#about" class="menu-link">ABOUT</a></li>
-    <li><a href="#education" class="menu-link">EDUCATION</a></li>
-    <li><a href="#projects" class="menu-link">PROJECTS</a></li>
-    <li><a href="#skills" class="menu-link">SKILLS</a></li>
-    <li><a href="#certifications" class="menu-link">CERTIFICATIONS</a></li>
-    <li><a href="#interests" class="menu-link">INTERESTS</a></li>
-  </ul>
-</div>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <img src="WhatsApp Image 2026-03-16 at 10.32.52 PM.jpeg" class="sidebar-photo" alt="Abhinandan Verma">
 
-<!-- MAIN CONTENT -->
-<div class="main-content">
+    <ul class="sidebar-menu">
+      <li><a href="#about" class="menu-link">ABOUT</a></li>
+      <li><a href="#education" class="menu-link">EDUCATION</a></li>
+      <li><a href="#projects" class="menu-link">PROJECTS</a></li>
+      <li><a href="#skills" class="menu-link">SKILLS</a></li>
+      <li><a href="#certifications" class="menu-link">CERTIFICATIONS</a></li>
+      <li><a href="#interests" class="menu-link">INTERESTS</a></li>
+    </ul>
+  </div>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h1 class="name">Abhinandan <span>Verma</span></h1>
-    
-    <div class="contact">
-      New Delhi, India<br>
-      <a href="tel:+918576984347">+91-8576984347</a><br>
-      <a href="mailto:abhinandanmaurya10@gmail.com">abhinandanmaurya10@gmail.com</a>
-    </div>
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
 
-    <p class="bio">
-      I am a passionate Data Science enthusiast with skills in data analysis,
-      Power BI, and machine learning fundamentals. I also have knowledge in
-      full-stack web development (frontend and backend) and use Git & GitHub
-      for version control and collaboration. I enjoy transforming data into
-      meaningful insights and building data-driven solutions that solve real-world problems.
-    </p>
+    <!-- ABOUT -->
+    <section id="about">
+      <h1 class="name">Abhinandan <span>Verma</span></h1>
 
-    <div class="social">
-      <a href="https://www.linkedin.com/in/abhinandan-verma-21a2792bb/?trk=opento_sprofile_details" aria-label="LinkedIn">in</a>
-      <a href="https://github.com/abhinandanmaurya10-art" aria-label="GitHub">G</a>
-    </div>
+      <div class="contact">
+        New Delhi, India<br>
+        <a href="tel:+918576984347">+91-8576984347</a><br>
+        <a href="mailto:abhinandanmaurya10@gmail.com">abhinandanmaurya10@gmail.com</a>
+      </div>
 
-    <a class="resume-btn" href="Abhinandan Verma Resume.pdf">Resume</a>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2 class="section-title">Education</h2>
-    
-    <div class="education-item">
-      <p class="degree"><strong>MCA</strong> – Abdul Kalam Technical University</p>
-      <p class="edu-details">Pursuing | GPA: 8.2</p>
-    </div>
-
-    <div class="education-item">
-      <p class="degree"><strong>B.Sc. in Mathematics</strong></p>
-      <p class="edu-details">Veer Bahadur Singh Purvanchal University | 2025 | CGPA: 7.4</p>
-    </div>
-
-    <div class="education-item">
-      <p class="degree"><strong>Senior Secondary Education (Class XII)</strong></p>
-      <p class="edu-details">Columbus International School | 2022 | 65%</p>
-    </div>
-
-    <div class="education-item">
-      <p class="degree"><strong>Secondary School Education (Class X)</strong></p>
-      <p class="edu-details">Columbus International School | 2020 | 72%</p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="project">
-      <h3>Chrome Extension – Auto Resume YouTube</h3>
-      <p>
-        Developed a Chrome extension that automatically resumes YouTube videos
-        after switching browser tabs using JavaScript tab detection.
+      <p class="bio">
+        I am a passionate Data Science enthusiast with skills in data analysis,
+        Power BI, and machine learning fundamentals. I also have knowledge in
+        full-stack web development (frontend and backend) and use Git & GitHub
+        for version control and collaboration. I enjoy transforming data into
+        meaningful insights and building data-driven solutions that solve real-world problems.
       </p>
-    </div>
 
-    <div class="project">
-      <h3>Jarvis AI Assistant</h3>
-      <p>
-        Built a Python voice assistant capable of playing music, opening apps,
-        taking screenshots and fetching news using speech recognition.
+      <div class="social">
+        <a href="https://www.linkedin.com/in/abhinandan-verma-21a2792bb/?trk=opento_sprofile_details"
+          aria-label="LinkedIn">in</a>
+        <a href="https://github.com/abhinandanmaurya10-art" aria-label="GitHub">G</a>
+      </div>
+
+      <a class="resume-btn" href="Abhinandan Verma Resume.pdf">Resume</a>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-item">
+        <p class="degree"><strong>MCA</strong> – Abdul Kalam Technical University</p>
+        <p class="edu-details">Pursuing | GPA: 8.2</p>
+      </div>
+
+      <div class="education-item">
+        <p class="degree"><strong>B.Sc. in Mathematics</strong></p>
+        <p class="edu-details">Veer Bahadur Singh Purvanchal University | 2025 | CGPA: 7.4</p>
+      </div>
+
+      <div class="education-item">
+        <p class="degree"><strong>Senior Secondary Education (Class XII)</strong></p>
+        <p class="edu-details">Columbus International School | 2022 | 65%</p>
+      </div>
+
+      <div class="education-item">
+        <p class="degree"><strong>Secondary School Education (Class X)</strong></p>
+        <p class="edu-details">Columbus International School | 2020 | 72%</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project">
+        <div class="project-header">
+          <h3>CodeSense AI - Powered Code Review Platform</h3>
+          <div class="project-links">
+            <!-- Replace these two URLs with the CodeSense repository and deployed website URLs. -->
+            <a class="project-link github-link" href="https://github.com/abhinandanmaurya10-art" target="_blank"
+              rel="noopener noreferrer" aria-label="View CodeSense AI source code on GitHub">GitHub</a>
+            <a class="project-link live-link" href="#" aria-label="View the live CodeSense AI project">Live Demo</a>
+          </div>
+        </div>
+        <p>
+          Built a full-stack web application that uses Google Gemini 2.5 Flash to analyze code across seven programming
+          languages. It detects syntax, logic, performance, security, and best-practice issues, generates quality
+          scores, and provides corrected code. The platform includes JWT authentication, MongoDB review history,
+          analytics dashboards, and copy/download functionality.
+          Tech stack: React, TypeScript, TanStack Start, Tailwind CSS, Node.js, Express, MongoDB, JWT, and Google Gemini
+          API.
+        </p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <h3>Jarvis - AI Assistant</h3>
+          <div class="project-links">
+            <!-- Replace these two URLs with the Jarvis repository and deployed website URLs. -->
+            <a class="project-link github-link" href="https://github.com/abhinandanmaurya10-art" target="_blank"
+              rel="noopener noreferrer" aria-label="View Jarvis source code on GitHub">GitHub</a>
+            <a class="project-link live-link" href="#" aria-label="View the live Jarvis project">Live Demo</a>
+          </div>
+        </div>
+        <p>
+          Developed a modular Python-based desktop assistant that combines text-to-speech, speech recognition, Google
+          Gemini AI, real-time weather updates, system monitoring, application automation, and OpenCV-powered face
+          detection. JARVIS uses a centralized command router to launch apps and websites, answer AI queries, play
+          music, report battery and weather conditions, and capture webcam photos.
+          Technologies: Python, Gemini API, OpenCV, OpenWeatherMap API, SpeechRecognition, pyttsx3, psutil, REST APIs.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <span class="skill">Python</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Numpy</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">Matplotlib</span>
+        <span class="skill">Seaborn</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">SQL</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Express</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">Git</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Excel</span>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert">Google Kaggle – Generative AI</div>
+      <div class="cert">Coursera – Data Analyst Certificate</div>
+      <div class="cert">Microsoft Power BI Certification</div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests">
+      <h2 class="section-title">Interests</h2>
+      <p class="interest">
+        Apart from data science and development, I enjoy reading books,
+        playing chess, watching sci-fi shows and exploring the latest
+        technology in AI and web development. I also enjoy playing cricket
+        and listening to music in my free time.
       </p>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-container">
-      <span class="skill">Python</span>
-      <span class="skill">Power BI</span>
-      <span class="skill">Numpy</span>
-      <span class="skill">Pandas</span>
-      <span class="skill">Matplotlib</span>
-      <span class="skill">Seaborn</span>
-      <span class="skill">Data Visualization</span>
-      <span class="skill">SQL</span>
-      <span class="skill">HTML</span>
-      <span class="skill">CSS</span>
-      <span class="skill">JavaScript</span>
-      <span class="skill">React</span>
-      <span class="skill">Git</span>
-      <span class="skill">GitHub</span>
-      <span class="skill">Excel</span>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <h2 class="section-title">Certifications</h2>
-    <div class="cert">Google Kaggle – Generative AI</div>
-    <div class="cert">Coursera – Data Analyst Certificate</div>
-    <div class="cert">Microsoft Power BI Certification</div>
-    <div class="cert">Google Machine Learning Certification</div>
-  </section>
-
-  <!-- INTERESTS -->
-  <section id="interests">
-    <h2 class="section-title">Interests</h2>
-    <p class="interest">
-      Apart from data science and development, I enjoy reading books,
-      playing chess, watching sci-fi shows and exploring the latest
-      technology in AI and web development. I also enjoy playing cricket
-      and listening to music in my free time.
-    </p>
-
-
+  <script src="script.js"></script>
 </body>
+
 </html>
