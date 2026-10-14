@@ -28,6 +28,9 @@ document.addEventListener('click', (event) => {
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     setMenuState(false);
+    document.querySelectorAll('.social-link.is-tooltip-open').forEach((link) => {
+      link.classList.remove('is-tooltip-open');
+    });
   }
 });
 
@@ -35,6 +38,21 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 900) {
     setMenuState(false);
   }
+});
+
+// Touch devices do not have hover, so a first tap reveals the social-link label
+// and a second tap follows the existing external link.
+document.querySelectorAll('.social-link').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    if (!window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
+    if (!link.classList.contains('is-tooltip-open')) {
+      event.preventDefault();
+      document.querySelectorAll('.social-link.is-tooltip-open').forEach((openLink) => {
+        openLink.classList.remove('is-tooltip-open');
+      });
+      link.classList.add('is-tooltip-open');
+    }
+  });
 });
 
 // Pointer dot stays direct while the outlined bubble eases behind it.
