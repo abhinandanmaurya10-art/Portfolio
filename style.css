@@ -412,12 +412,22 @@ section {
 }
 
 .skill {
+  position: relative;
   max-width: 100%;
   padding: 8px 14px;
   border-radius: 20px;
   background: #e6f6f9;
   font-size: 14px;
   overflow-wrap: anywhere;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.skill:hover {
+  z-index: 1;
+  background: #168fa0;
+  box-shadow: 0 8px 18px rgba(22, 143, 160, 0.28);
+  color: #fff;
+  transform: translateY(-4px) scale(1.12);
 }
 
 .cert {
@@ -593,7 +603,8 @@ section {
   .social-tooltip,
   .resume-btn,
   .section-title a,
-  .section-title a::after {
+  .section-title a::after,
+  .skill {
     transition: none;
   }
 }
