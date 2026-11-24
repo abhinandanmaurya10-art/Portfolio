@@ -405,6 +405,23 @@ section {
   line-height: 1.7;
 }
 
+.project-tech {
+  margin: 0 0 8px;
+  color: #68777a;
+  font-size: 14px;
+}
+
+.project-details {
+  max-width: 800px;
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.7;
+}
+
+.project-details li {
+  margin-bottom: 4px;
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
